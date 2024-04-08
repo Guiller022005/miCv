@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ada8ac; /* Fondo Principal */
+    color: #000000; /* Texto Principal */
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .informacion-lateral {
+      float: none;
+      width: 100%;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #000000; /* Borde Principal */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Gradiente de fondo */
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    padding: 20px;  
+}
+
+/* Información lateral */
+.informacion-lateral {
+    position: relative;
+    background: linear-gradient(to right, #a8d5e2 90%, #ffffff 1%); /* Fondo Lateral */
+    padding: 0px;
+    padding-right: 80px;
+    padding-left: 20px;
+    width: 350px;
+    margin-right: 20px;
+}
+
+/* Información general */
+.informacion-general {
+    flex-grow: 1;
+    padding: 20px;
+    padding-right: 10px;
+}
+
+/* Estilos de texto */
+.nombre {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px; /* Aumento del tamaño de la letra */
+    margin-bottom: 10px;
+}
+
+.descripcion-profesion {
+    font-size: 20px; /* Aumento del tamaño de la letra */
+    font-weight: 700;
+}
+
+/* Secciones principales */
+.titulo-seccion-principal {
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px; /* Aumento del tamaño de la letra */
+}
+
+/* Lista de proyectos */
+.lista-proyectos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.enlace-proyectos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Aumento del tamaño de la letra */
+    line-height: 24px;
+    color: #0C58B2; /* Enlaces de Proyectos */
+    text-decoration: none;
+}
+
+/* Experiencia laboral */
+.puesto-empresa {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px; /* Aumento del tamaño de la letra */
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.periodo-experiencia {
+    font-size: 16px; /* Aumento del tamaño de la letra */
+    margin-bottom: 15px;
+}
+
+/* Educación */
+.titulo-educacion {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px; /* Aumento del tamaño de la letra */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.lista-educacion {
+    list-style-type: none;
+    padding: 0;
+}
+
+div.educacion {
+    position: relative;
+    font-style: normal;
+    font-size: 18px; /* Aumento del tamaño de la letra */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el período de experiencia */
+.periodo-experiencia {
+    font-size: 16px; /* Aumento del tamaño de la letra */
+    color: #6C40C4; /* Color del texto */
+    margin-bottom: 15px;
+}
