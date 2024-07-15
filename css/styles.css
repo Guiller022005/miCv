@@ -1,128 +1,185 @@
-/* Estilos generales */
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ada8ac; /* Fondo Principal */
-    color: #000000; /* Texto Principal */
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .informacion-lateral {
-      float: none;
-      width: 100%;
-    }
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ada8ac;
+    color: #000;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #000000; /* Borde Principal */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, #ffffff, #ffffff); /* Gradiente de fondo */
+    margin: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
 }
 
-/* Contenedor principal */
 .contenedor-principal {
     display: flex;
-    padding: 20px;  
+    padding: 20px;
 }
 
-/* Información lateral */
 .informacion-lateral {
-    position: relative;
-    background: linear-gradient(to right, #a8d5e2 90%, #ffffff 1%); /* Fondo Lateral */
-    padding: 0px;
-    padding-right: 80px;
-    padding-left: 20px;
-    width: 350px;
-    margin-right: 20px;
+    width: 30vw;
+    background: linear-gradient(to right, #a8d5e2 90%, #fff 1%);
+    justify-content: center;
+    padding: 20px;
 }
 
-/* Información general */
+.informacion-lateral img{
+    width: 15vw;
+}
+
+.contacts a{
+    text-decoration: none;
+    width: 15vw;
+}
+
+.contacts h3{
+    font-size: 1rem;
+}
+
+.contacts a{
+    font-size: 1rem;
+}
+
+.date p{
+    width: 25vw;
+}
+
+.idiomas{
+    font-size: 1rem;
+    width: 10vw;
+}
+
+.idiomas h3{
+    font-size: 1rem;
+}
+
+.tipo-contacto a{
+    
+    font-size: 1rem;
+    width: 10vw;
+}
+
+.idiomas li{
+    width: 5vw;
+    margin-left: 10px;
+}
+
 .informacion-general {
     flex-grow: 1;
     padding: 20px;
-    padding-right: 10px;
 }
 
-/* Estilos de texto */
-.nombre {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px; /* Aumento del tamaño de la letra */
+.habilidades-tecnicas li{
+    width: 25vw;
+    margin-left: 10px;
+}
+
+.habilidades-tecnicas span{
+    font-size: 1rem;
+}
+
+.habilidades-blandas li{
+    width: vw;
+    margin-left: 10px;
+}
+
+.habilidades-blandas span{
+    font-size: 1rem;
+}
+
+.proyectos li{
+    width: 20vw;
+    margin-left: 10px;
+}
+
+.nombre, .descripcion-profesion {
     margin-bottom: 10px;
+}
+
+.nombre {
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .descripcion-profesion {
-    font-size: 20px; /* Aumento del tamaño de la letra */
+    font-size: 20px;
     font-weight: 700;
 }
 
-/* Secciones principales */
 .titulo-seccion-principal {
-    font-style: normal;
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 22px; /* Aumento del tamaño de la letra */
+    margin: 20px 0 10px;
+    font-size: 22px;
 }
 
-/* Lista de proyectos */
-.lista-proyectos {
-    list-style-type: none;
-    padding: 0;
+.proyectos {
+    width: 25vw;
 }
+
 
 .enlace-proyectos {
-    font-style: normal;
     font-weight: 400;
-    font-size: 18px; /* Aumento del tamaño de la letra */
+    font-size: 18px;
     line-height: 24px;
-    color: #0C58B2; /* Enlaces de Proyectos */
+    color: #0C58B2;
     text-decoration: none;
 }
 
-/* Experiencia laboral */
-.puesto-empresa {
-    font-style: normal;
+.puesto-empresa, .periodo-experiencia, .titulo-educacion, .lista-educacion div, .periodo-experiencia {
     font-weight: 700;
-    font-size: 18px; /* Aumento del tamaño de la letra */
-    margin-top: 15px;
-    margin-bottom: 5px;
+    font-size: 1rem;
+    margin: 15px 0 5px;
 }
 
 .periodo-experiencia {
-    font-size: 16px; /* Aumento del tamaño de la letra */
-    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #6C40C4;
 }
 
-/* Educación */
-.titulo-educacion {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px; /* Aumento del tamaño de la letra */
-    margin-top: 20px;
-    margin-bottom: 10px;
+.experiencia-laboral{
+    width: 20vw;
+    margin-left: 10px;
 }
 
-.lista-educacion {
-    list-style-type: none;
-    padding: 0;
+.experiencia-laboral h3{
+    font-size: 1rem;
 }
 
-div.educacion {
-    position: relative;
-    font-style: normal;
-    font-size: 18px; /* Aumento del tamaño de la letra */
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+.experiencia-laboral span{
 
-/* Estilo para el período de experiencia */
-.periodo-experiencia {
-    font-size: 16px; /* Aumento del tamaño de la letra */
-    color: #6C40C4; /* Color del texto */
-    margin-bottom: 15px;
+    font-size: 1rem;
+}
+@media (min-width: 768px) {
+    .contenedor-principal {
+        flex-direction: row; /* Vuelve a la dirección de fila para dispositivos más grandes */
+    }
+
+    .informacion-lateral {
+        width: 30%; /* Ajusta el ancho para que ocupe el 30% del contenedor principal */
+        margin-right: 20px; /* Margen derecho añadido para separar de la información general */
+        text-align: left; /* Alineación de texto izquierda para dispositivos más grandes */
+    }
+
+    .informacion-general {
+        flex-grow: 1; /* Asegura que la información general ocupe el espacio restante */
+        margin-left: 20px; /* Añade un margen izquierdo para separar del lateral */
+    }
+
+    .idiomas {
+        width: 20%; /* Ajusta el ancho para dispositivos más grandes */
+    }
+
+    .habilidades-tecnicas,
+    .habilidades-blandas,
+    .proyectos,
+    .date,
+    .experiencia-laboral {
+        width: 40%; /* Ajusta el ancho para dispositivos más grandes */
+    }
 }
